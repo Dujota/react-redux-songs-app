@@ -41,11 +41,7 @@ class SongList extends React.Component {
 
  ***** gets called with all the state inside redux store && it must return an object with the state we want in the component
 * */
-const mapStateToProps = state => {
-  console.log(state);
-  const { songs } = state;
-  return { songs };
-};
+const mapStateToProps = ({ songs }) => ({ songs });
 
 /* We implement the connect component here using closures
 
