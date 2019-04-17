@@ -13,7 +13,7 @@ class SongList extends React.Component {
 
     const { songs } = this.props;
     return (
-      <div>
+      <div className="ui devided list">
         {songs.map(song => (
           <div className="item" key={song.title}>
             <div className="right floated content">
@@ -24,7 +24,6 @@ class SongList extends React.Component {
             <div className="content">{song.title}</div>
           </div>
         ))}
-        ;
       </div>
     );
   }
