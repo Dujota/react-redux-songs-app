@@ -21,7 +21,6 @@ const selectedSongReducer = (selectedSong = null, action) => {
 };
 
 // finally export defualt here so that all the files can have access to combined reducers method and the code herein
-
 export default combineReducers({
   songs: songsReducer,
   selectedSong: selectedSongReducer,
