@@ -13,7 +13,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
   const { type, payload } = action;
 
   // this allows us to expand our code with future actions and types
-  if (type === 'SELECTED_SONG') {
+  if (type === 'SONG_SELECTED') {
     return payload;
   }
 
